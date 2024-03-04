@@ -1,0 +1,102 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;    
+    scroll-behavior: smooth;
+    transition-duration: 3s; 
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0px;
+    align-items: center;
+    color: #202020;
+    background: linear-gradient(to right, #545454, #252525);
+}
+
+.logo img{
+    width: 80px;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+} 
+
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #fbbe06;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s all;
+    font-weight: bold;
+}
+
+.nav-itens>li>a:hover {
+    color: white;
+}
+
+.icons .bi {
+    font-size: 22px;
+    color: #fbbe06;
+    margin-left: 8px;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 750px 
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+}
+
+.img-sobre {
+    flex: 1;
+    margin-left: 150px;
+}
+
+.dados {
+    flex: 2;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dados h1 {
+    margin-bottom: 60px;
+    color: #202020;
+    font-weight: bold;
+}
+
+.dados p {
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 60px;
+}
+
+.dados img {
+    width: 120px;
+}
