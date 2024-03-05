@@ -100,3 +100,347 @@ nav {
 .dados img {
     width: 120px;
 }
+
+/* TITULO */
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Altura do título */
+}
+
+.titulo h4 {
+    font-size: 38px;
+    color: #fbbe06;
+    background: linear-gradient(to right, #545454, #252525);
+    width: 100%;
+    text-align: center; /* Alinhar o texto horizontalmente */
+    line-height: 100px; /* Ajustar a linha de altura para centralizar verticalmente */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimentos padrão */
+}
+
+/* EDUCATION */
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #545454, #252525);
+}
+
+.dados-education {
+    border-right: 1px solid #fbbe06; /* Adiciona uma borda vertical à direita */
+    padding-right: 10px; /* Ajusta o espaçamento à direita para separar os elementos */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Define a direção dos itens para coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.dados-education:last-child {
+    border-right: none; /* Remove a borda vertical à direita do último elemento */
+}
+
+.curso {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.universidade {
+    font-size: 20px;
+    color: #fbbe06;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ano {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* EXPERIENCIA */
+.experiencia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.experiencia h1 {
+    margin-left: 670px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    font-size: 38px;
+}
+
+.sobre-experiencia {
+    width: calc(50% - 5px); /* Define a largura das caixas para 50% do contêiner com um espaço de 5px */
+    margin-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.sobre-experiencia ul li {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 300px;
+}
+
+.funcao {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.funcao-chef {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbbe06;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .sobre-experiencia {
+        width: 100%; /* Muda para 100% de largura em telas menores para uma exibição de coluna única */
+    }
+}
+
+/* TRABALHOS */
+.trabalhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #545454, #252525);
+    margin-bottom: 70px;
+}
+
+.slider {
+    overflow-x: hidden;
+    width: 900px;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+    margin-bottom: 50px;
+}
+
+.slide {
+    position: relative;
+}
+
+.content {
+display: flex;
+width: fit-content;
+}
+
+.content img {
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fbbe06;
+    color: #202020;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+}
+
+button:first-of-type {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+button:last-of-type {
+    right: 0;
+    transform: translate(50%, -50%);
+} 
+
+button:hover {
+    background-color: #202020;
+    color: #fbbe06;
+}
+
+.lenght-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, 200%);
+    display: flex;
+    gap: 10px;
+
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #202020;
+}
+
+.dot.current {
+    background: #fbbe06;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    color: #f5f5f5;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts {
+    margin-bottom: 0.75rem;
+}
+
+#footer_contacts img {
+    width: 150px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: #a8a29e;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #a8a29e;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #0e0c0c;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group a {
+    width: 80px;
+    background-color: #7f37c9;
+    border: none;
+    color: #a8a29e;
+    padding: 0, 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input_group a:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #0e0c0c;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
