@@ -28,10 +28,11 @@
 
         <div class="links">
             <ul class="nav-itens">
-                <li><a href="../home/home.html">Home</a></li>
-                <li><a href="../sobreNos/sobreNos.html">Sobre</a></li>
-                <li><a href="../catalogo/catalogo.html">Catalogo</a></li>
-                <li><a href="../suporte/suporte.html">Suporte</a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#experiencia">Experiencias</a></li>
+                <li><a href="#trabalho">Trabalhos</a></li>
             </ul>
         </div>
 
@@ -44,17 +45,17 @@
 
     </nav> <!--NAV-->
 
-    <div class="banner">
+    <div class="banner" id="banner">
         <img src="assets/banner.png" alt="Imagem do Chef de Cozinha">
     </div> <!--banner-->
 
-    <div class="sobre">
-        <div class="img-sobre">
+    <div class="sobre" id="sobre">
+        <div class="img-sobre" id="chefe">
             <img src="assets/chef.png" alt="Chefe">
         </div>
 
         <div class="dados">
-            <h1>SOBRE</h1>
+            <h1>SOBRE:</h1>
             <p>Ricardo Memoli é mais do que um chef de cozinha; ele é um artista culinário que transforma ingredientes simples em obras-primas gastronômicas. 
                 Com sua paixão pela comida e sua habilidade técnica incomparável, ele encanta os paladares mais exigentes. 
                 Cada prato que ele cria é uma sinfonia de sabores, cores e texturas, refletindo sua dedicação à excelência e sua busca incessante pela perfeição. 
@@ -63,8 +64,8 @@
         </div>
     </div> <!--SOBRE-->
 
-    <div class="titulo">
-        <h4>EDUCAÇÂO:</h4>
+    <div class="titulo" id="education">
+        <h4>EDUCAÇÃO:</h4>
     </div>
     <div class="education">
         <div class="dados-education">
@@ -86,8 +87,8 @@
         </div>
     </div> <!--EDUCATION-->
 
-    <div class="experiencia">
-        <h1>EXPERIENCIA PROFISSIONAL</h1>
+    <div class="experiencia" id="experiencia">
+        <h1>EXPERIÊNCIA PROFISSIONAL:</h1>
         <div class="sobre-experiencia">
             <p class="funcao-chef">Chef Executivo em um Restaurante de Luxo</p>
             <ul>
@@ -127,7 +128,7 @@
         </div>
     </div> <!--EXPERIENCIA-->
 
-    <div class="titulo">
+    <div class="titulo" id="trabalho">
         <h4>TRABALHOS:</h4>
     </div>
     <div class="trabalhos">
@@ -154,68 +155,69 @@
         <div id="footer_content">
             <div id="footer_contacts">
                 <img src="assets/logo_sem_fundo.png">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                </div>
             </div>
             
             <ul class="footer-list">
                 <li>
-                    <h3>Blog</h3>
+                    <h3>About</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="#banner" class="footer-link">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Adventures</a>
+                    <a href="#sobre" class="footer-link">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Music</a>
+                    <a href="#education" class="footer-link">Formação</a>
+                </li>
+                <li>
+                    <a href="#experiencia" class="footer-link">Experiências</a>
+                </li>
+                <li>
+                    <a href="#trabalho" class="footer-link">Trabalhos</a>
                 </li>
             </ul>
 
             <ul class="footer-list">
                 <li>
-                    <h3>Products</h3>
+                    <h3>Serviços</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">App</a>
+                    <a href="#" class="footer-link">Catering</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Desktop</a>
+                    <a href="#" class="footer-link">Aulas de culinária</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Cloud</a>
+                    <a href="#" class="footer-link">Serviços de personal chef</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Consultoria culinária</a>
                 </li>
             </ul>
-
-            <div id="footer_subscribe">
-                <h3>Subscribe</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quas.
-                </p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-
-                </div>
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
             </div>
         </div>
 
         <div id="footer_copyright">
             &#169
             2023 all rights reserved.
+        </div>
+
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=5511947281926" target="_blank">
+                <img src="assets/whatsapp.png" alt="WhatsApp" 
+                style="width: 100px; height: auto; z-index: 1000; position: fixed; right: 20px; bottom: 20px;">
+            </a>
         </div>
     </footer>
 

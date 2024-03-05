@@ -20,14 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     function setCurrentDot() {
-        const dots = document.querySelectorAll('.dot'); // Corrigido para 'dots'
+        const dots = document.querySelectorAll('.dot');
         for (let dot of dots) {
             dot.classList.remove('current');
         }
         dots[currentSlide].classList.add('current');
     }
     
-
     function controlSlide({ target: { id } }) {
         const contentLength = content.children.length;
         switch (id) {
@@ -67,5 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         setCurrentDot();
     }
-    
+
+    setInterval(() => {
+        controlSlide({ target: { id: 'nextSlide' } });
+    }, 4000);
 });
